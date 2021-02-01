@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>系统密码登记</title>
+    </head>
+    <body>
+
+        <form action="sql.php" method="POST">
+            系统名：<input type="text" name="name">
+            <br>
+            用户名：<input type="text" name="username">
+            <br>
+            密&ensp;&ensp;码：<input type="text" name="password">
+            <br>
+            类&ensp;&ensp;型：<select name="kind">
+                <option value="配合等保">配合等保</option>
+                <option value="上线检测">上线检查</option>
+                <option value="应急响应">应急响应</option>
+            </select>
+            <br>
+            时&ensp;&ensp;间:<input type="date" name="date1"/>
+            <br>
+            <br>
+            <input type="submit" value="提交">
+        </form>
+    </body>
+</html>
